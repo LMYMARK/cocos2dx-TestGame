@@ -212,8 +212,8 @@ MortalObject::~MortalObject()
 
 void MortalObject::cbDestroy()
 {
-	this->setVisible(false);
-	//this->getParent()->removeChild(this, false);
+	//this->setVisible(false);
+	this->getParent()->removeChild(this, false);
 }
 
 int MortalObject::onDestroy()
